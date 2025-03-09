@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Order Form
+        </title>
+        <style>
+            body
+            {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+            h1 
+            {
+                text-align: center;
+            }
+            label
+            {
+                display: block;
+                margin-top: 10px;
+            }
+            input, select, textarea
+            {
+                width: 100%;
+                padding: 8px;
+                margin-top: 5px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            .gender 
+            {
+                display: flex;
+                align-items: center;
+            }
+            .gender input
+            {
+                width: auto;
+                margin-right: 5px;
+            }
+            .buttons
+            {
+                margin-top: 15px;
+            } 
+            .buttons button
+            {
+                padding: 8px 16px;
+                border: none;
+                cursor: pointer;
+                margin-right: 10px;
+            }
+            .submit-btn 
+            {
+                background-color: green;
+                color: white;
+            }
+            .reset-btn
+            {
+                background-color: red;
+                color: white;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>
+            Place Your Orders Here
+        </h1>
+        <form>
+            <label>Full Name:</label>
+            <input type="text" placeholder="Enter your Full Name">
+            <label>Gender</label>
+            <div class="gender">
+                <input type="radio" name="gender" value="male"> Male 
+                <input type="radio" name="gender" value="female"> Female
+            </div>
+            <label>Email:</label>
+            <input type="email" placeholder="Enter Your Email">
+            <label>Meal Type:
+                <select>
+                    <option>Breakfast</option>
+                    <option>Lunch</option>
+                    <option>Dinner</option>
+                </select>
+            </label>
+            <label>Choose Your Favourite:
+                <select>
+                    <option>Select Meal</option>
+                    <option>Burger</option>
+                    <option>Pizza</option>
+                    <option>Pasta</option>
+                </select>
+            </label>
+            <label>Customer's photo with food:
+                <input type="file">
+            </label>
+            <label>Your feedback here:
+                <textarea placeholder="Enter Your Message Here" rows="4"></textarea>
+            </label>
+            <div class="buttons">
+                <button class="submit-btn">Submit</button>
+                <button class="reset-btn" type="reset">Reset</button>
+            </div>
+        </form>
+    </body>
+</html>
